@@ -1,5 +1,16 @@
 # `grading.md`
 
+## Why are there so many instructions?
+
+Jupyter notebooks (i.e. `.ipynb` files) are bad for version control.
+I use a probably uncommon workflow with Jupyter notebooks (technically Jupyter Lab in my case) to mitigate this.
+See the following links for more details
+
+- https://goodresearch.dev/tidy.html#keep-jupyter-notebooks-tidy
+- https://jupytext.readthedocs.io/en/latest/
+
+---
+
 ## Clone this repo
 
 Navidate to your desired grading folder, e.g. run
@@ -45,7 +56,7 @@ as the output.
 Run
 
 ```
-jupytext --to ipynb scripts/01.py
+jupytext --sync 01.py
 ```
 
 to recover the `01.ipynb` file. Then run
