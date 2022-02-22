@@ -21,9 +21,8 @@
 first_name = input("What's your first name?\n")
 last_name = input("Alright, well what about your last name?\n")
 print("---\n", last_name, first_name, "\n---")
-
-
 # -
+
 
 # 2) Accept an integer $n$ input from the user and compute the value of
 #
@@ -38,39 +37,49 @@ print("---\n", last_name, first_name, "\n---")
 # https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals
 # n + nn + nnn = n * (1 + 11 + 111) = n * 123
 
+
 def get_input():
     req = f"Enter a single-digit integer; n ="
     res = input(req)
     n = int(res)
     return n
 
+
 # Validate input
 n = get_input()
 is_single = abs(n) < 10
-    
-# Repeat user input if validation fails    
+
+# Repeat user input if validation fails
 while is_single is False:
     n = get_input()
     is_single = abs(n) < 10
 
 # Compute nn, nnn, and n + nn + nnn
-if n < 0 : sign = "-"
-else : sign = ""
+if n < 0:
+    sign = "-"
+else:
+    sign = ""
 
 n_string = sign + str(abs(n))
-nn_string = n_string +  str(abs(n))
+nn_string = n_string + str(abs(n))
 nnn_string = nn_string + str(abs(n))
 total = str(n * 123)
 
 # Print n + nn + nnn
-print("n + nn + nnn = " + 
-      n_string + " + " + 
-      nn_string + " + " + 
-      nnn_string + " = " +
-      total + ".")
+print(
+    "n + nn + nnn = "
+    + n_string
+    + " + "
+    + nn_string
+    + " + "
+    + nnn_string
+    + " = "
+    + total
+    + "."
+)
 # -
 
-# 3) Ask the user "What country are you from?".  
+# 3) Ask the user "What country are you from?".
 # Then print the following statement:
 #
 # <center>
@@ -95,14 +104,14 @@ print(f"I have heard that {country} is a beautiful country!")
 
 # ## Answer
 #
-# There is no output since 
+# There is no output since
 #
 # $$ x^2 = 100 \not< 100.$$
 
 x = 10
 y = 50
-if (x ** 2 > 100 and y < 100):
-       print(x,y)
+if x**2 > 100 and y < 100:
+    print(x, y)
 # print(x ** 2 > 100 and y < 100)
 
 # 5) What is the output of the following (`+`) operator, and why does this code chunk execute this way?
@@ -172,7 +181,7 @@ print(f"id(a) == id(b): {id(a) == id(b)}")
 # - https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations
 # - https://en.wikipedia.org/wiki/Modulo_operation
 
-print(2%6)
+print(2 % 6)
 
 # 7) What is the output of the following code and what arithmetic operators are used here?
 #
@@ -191,7 +200,7 @@ print(2%6)
 # - https://docs.python.org/3/reference/expressions.html#binary-arithmetic-operations
 # - https://docs.python.org/3/reference/expressions.html?highlight=precedence#operator-precedenceprint(2 * 3 ** 3 * 4)
 
-print(2 * 3 ** 3 * 4)
+print(2 * 3**3 * 4)
 
 # 8) What is a text editor?
 
@@ -209,7 +218,7 @@ print(2 * 3 ** 3 * 4)
 # - https://docs.python.org/3/
 
 # + [markdown] jp-MarkdownHeadingCollapsed=true tags=[]
-# 10) What is jupyter notebook, what type of python environment is it, and what alternatives are there to jupyter notebook? 
+# 10) What is jupyter notebook, what type of python environment is it, and what alternatives are there to jupyter notebook?
 # -
 
 # ## Answer
