@@ -13,7 +13,7 @@
 #     name: python3
 # ---
 
-# `01.ipynb`
+# # `01.ipynb`
 
 # ## Problem 1
 #
@@ -47,7 +47,7 @@ print(f"n + nn + nnn = {123 * n}")
 
 # ## Problem 3
 #
-# Ask the user 
+# Ask the user
 #
 # > What country are you from?
 #
@@ -73,7 +73,7 @@ print(f"I have heard that {country} is a beautiful country!")
 
 # ## Problem 5
 #
-# - What is the output of 
+# - What is the output of
 # ```python
 # x = 36/4 * (3 + 2) * 4 + 2.
 # ```
@@ -100,7 +100,7 @@ print(f"I have heard that {country} is a beautiful country!")
 # ```
 # -
 
-x = 36 / 4 * (3 +  2) * 4 + 2
+x = 36 / 4 * (3 + 2) * 4 + 2
 print(x)
 
 # ## Problem 6
