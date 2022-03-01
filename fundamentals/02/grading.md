@@ -31,7 +31,7 @@ conda env create -f 02-env.yml
 Run
 
 ```
-conda activate 01-env
+conda activate 02-env
 ```
 
 ## Generate `02.ipynb` file
