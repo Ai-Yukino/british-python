@@ -83,3 +83,39 @@ for p in list(permutations(S, k)):
 # <center>
 # <img src=images/2.png style="width: 75%">
 # </center>
+
+# ## ❄ Problem 3 ❄
+#
+# [🍅 `itertools.combinations_with_replacement()` | HackerRank](https://www.hackerrank.com/challenges/itertools-permutations/problem)
+#
+# ---
+#
+# <center>
+# <img src=images/3-instructions.png style="width: 75%">
+# </center>
+
+# +
+## Solution to problem 3
+
+from itertools import combinations_with_replacement as comb_rpl
+
+req = "Give me a string and number less than or equal to that string's length:"
+
+Sk = list(input(req).split())
+
+S = "".join(sorted(list(Sk[0])))
+k = int(Sk[1])
+
+# print(S)
+# print(k)
+# print(list(permutations(S,k)))
+
+for p in list(comb_rpl(S, k)):
+    print("".join(p))
+# -
+
+# ## HackerRank screenshot for problem 3
+#
+# <center>
+# <img src=images/3.png style="width: 75%">
+# </center>
