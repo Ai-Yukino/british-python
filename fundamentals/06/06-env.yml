@@ -1,0 +1,11 @@
+name: 06-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.2
+  - jupyterlab=3.2.9
+  - jupytext=1.13.7
+  - black=22.1
+  - ca-certificates
+  - certifi
+  - openssl
