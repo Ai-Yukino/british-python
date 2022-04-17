@@ -1,4 +1,5 @@
 *.ipynb
+.ipynb_checkpoints
 
 # Large file: 963MB
 en.openfoodfacts.org.products.tsv
