@@ -51,7 +51,7 @@ conda activate 02-adv
 Run
 
 ```
-jupytyer-lab
+jupytyer lab --no-browser
 ```
 
 Open the url
@@ -91,3 +91,17 @@ CTRL + C
 ```
 
 just once. Afterwards, open one of the new `8888` links.
+
+Alternative, you can also run
+
+```
+jupyter-lab --no-browser
+```
+
+instead of
+
+```
+jupyter-lab
+```
+
+to fix this issue.
