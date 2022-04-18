@@ -101,7 +101,11 @@ items
 
 for item in items:
     print(f"{item} price(s):")
-    print(chipo[(chipo["item_name"] == item) & (chipo["quantity"] == 1)]["price_usd"].unique())
+    print(
+        chipo[(chipo["item_name"] == item) & (chipo["quantity"] == 1)][
+            "price_usd"
+        ].unique()
+    )
     print("\n")
 
 # ### Example: "Bottled Water"
@@ -132,17 +136,17 @@ for item in items:
 df_lazy_prices = chipo[["item_name", "price_usd"]]
 df_lazy_prices
 
-# ## ❄ Step 6. Sort by the name of the item ❄ 
+# ## ❄ Step 6. Sort by the name of the item ❄
 #
 # ---
 
-df_lazy_prices.sort_values(by = "item_name")
+df_lazy_prices.sort_values(by="item_name")
 
 # ## ❄ Step 7. What was the quantity of the most expensive item ordered? ❄
 #
 # ---
 
-df_sorted = chipo.sort_values(by = "price_usd", ascending = False)
+df_sorted = chipo.sort_values(by="price_usd", ascending=False)
 df_sorted.iloc[0]["quantity"]
 
 # ## ❄ Step 8. How many times was a Veggie Salad Bowl ordered? ❄
