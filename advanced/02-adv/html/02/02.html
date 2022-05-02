@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ps-01</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>02</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14579,8 +14579,17 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="ps-01.ipynb"><code>ps-01.ipynb</code><a class="anchor-link" href="#ps-01.ipynb">&#182;</a></h1><hr>
-<p><a href="https://github.com/zachhall/pandas_exercises/blob/master/01_Getting_%26_Knowing_Your_Data/World%20Food%20Facts/Exercises.ipynb">👩‍💻 World Food Facts $\subset$ ... $\subset$ pandas_exerces | GitHub repo</a></p>
+<h1 id="02.ipynb"><code>02.ipynb</code><a class="anchor-link" href="#02.ipynb">&#182;</a></h1><center>
+    <img src="images/02.png", style="width:50%; border-radius:2%">
+</center><p><a href="https://unsplash.com/photos/KsSxzBnozMY">🖼 Chris Curry | unsplash</a></p>
+<hr>
+<p><a href="https://github.com/zachhall/pandas_exercises/blob/master/02_Filtering_%26_Sorting/Chipotle/Exercises.ipynb">👩‍💻 Chipotle $\subset$ 02<em>Filtering</em>&amp;_Sorting $\subset$ pandas_exerces | GitHub repo</a></p>
+<p>Run</p>
+<ul>
+<li><a href="#🐍">🐍 Python imports 🐍</a>, and then</li>
+<li><a href="#📁">📁 Data processing 📁</a>.</li>
+</ul>
+<p>Then any section <a href="#❄1">❄ Step 1 ...❄</a> to <a href="#❄9">❄ Step 9 ...❄</a> can be run independently of each other.</p>
 
 </div>
 </div>
@@ -14592,7 +14601,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%F0%9F%90%8D-Python-imports-%F0%9F%90%8D">&#128013; Python imports &#128013;<a class="anchor-link" href="#%F0%9F%90%8D-Python-imports-%F0%9F%90%8D">&#182;</a></h2>
+<h2 id="%F0%9F%90%8D-Python-imports-%F0%9F%90%8D-">&#128013; Python imports &#128013; <a id="&#128013;" /><a class="anchor-link" href="#%F0%9F%90%8D-Python-imports-%F0%9F%90%8D-">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14619,28 +14628,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-1.-Go-to-https://www.kaggle.com/openfoodfacts/world-food-fats/data">Step 1. Go to <a href="https://www.kaggle.com/openfoodfacts/world-food-fats/data">https://www.kaggle.com/openfoodfacts/world-food-fats/data</a><a class="anchor-link" href="#Step-1.-Go-to-https://www.kaggle.com/openfoodfacts/world-food-fats/data">&#182;</a></h3><h3 id="Step-2.-Download-the-dataset-to-your-computer-and-unzip-it.">Step 2. Download the dataset to your computer and unzip it.<a class="anchor-link" href="#Step-2.-Download-the-dataset-to-your-computer-and-unzip-it.">&#182;</a></h3><h3 id="Step-3.-Use-the-tsv-file-and-assign-it-to-a-dataframe-called-food">Step 3. Use the tsv file and assign it to a dataframe called food<a class="anchor-link" href="#Step-3.-Use-the-tsv-file-and-assign-it-to-a-dataframe-called-food">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%E2%9D%84-Solution-to-steps-1--%3E-3-%E2%9D%84">&#10052; Solution to steps 1 -&gt; 3 &#10052;<a class="anchor-link" href="#%E2%9D%84-Solution-to-steps-1--%3E-3-%E2%9D%84">&#182;</a></h2><p>❗ This is a huge dataset: 963MB ❗</p>
-<p>It took me almost 30 seconds to load.</p>
-<div align="center">
-    <img src="images/large.png" style="width: 30%; border-radius: 2%">
-</div><hr>
-<ul>
-<li><code>en.openfoodfacts.org.products.tsv</code> is not included in the remote GitHub repo</li>
-<li>If you cloned this repo, you need to redownload <code>en.openfoodfacts.org.products.tsv</code> following steps 1 -&gt; 2<ul>
-<li>You need to sign up for a kaggle account to download the dataset</li>
-</ul>
-</li>
+<h2 id="%F0%9F%93%81-Data-processing-%F0%9F%93%81-">&#128193; Data processing &#128193; <a id="&#128193;" /><a class="anchor-link" href="#%F0%9F%93%81-Data-processing-%F0%9F%93%81-">&#182;</a></h2><ul>
+<li>Store data in <code>chipo</code> variable</li>
+<li>Convert object-valued column <code>item_price</code> to <code>float64</code>-valued <code>price_usd</code> column</li>
+<li>Add unit-price column <code>unit_price_usd</code></li>
 </ul>
 
 </div>
@@ -14654,7 +14645,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/en.openfoodfacts.org.products.tsv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chipo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/chipotle.tsv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">chipo</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;item_price&quot;</span><span class="p">:</span> <span class="s2">&quot;price_usd&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;price_usd&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;price_usd&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;(\d*\.\d*)&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;unit_price_usd&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;price_usd&quot;</span><span class="p">]</span> <span class="o">/</span> <span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14669,7 +14665,43 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-4.-See-the-first-5-entries">Step 4. See the first 5 entries<a class="anchor-link" href="#Step-4.-See-the-first-5-entries">&#182;</a></h3>
+<h2 id="%E2%9D%84-Step-1.-Import-the-necessary-libraries-%E2%9D%84-">&#10052; Step 1. Import the necessary libraries &#10052; <a id="&#10052;1" /><a class="anchor-link" href="#%E2%9D%84-Step-1.-Import-the-necessary-libraries-%E2%9D%84-">&#182;</a></h2><h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2><p>See <a href="#🐍">🐍 Python imports 🐍</a> section</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="%E2%9D%84-Step-2.-Import-the-dataset-from-this-address.-%E2%9D%84">&#10052; Step 2. Import the dataset from this <a href="https://raw.githubusercontent.com/justmarkham/DAT8/master/data/chipotle.tsv">address</a>. &#10052;<a class="anchor-link" href="#%E2%9D%84-Step-2.-Import-the-dataset-from-this-address.-%E2%9D%84">&#182;</a></h2><h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2><p>We manually saved this in <code>data</code>.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="%E2%9D%84-Step-3.-Assign-it-to-a-variable-called-chipo.-%E2%9D%84">&#10052; Step 3. Assign it to a variable called <code>chipo</code>. &#10052;<a class="anchor-link" href="#%E2%9D%84-Step-3.-Assign-it-to-a-variable-called-chipo.-%E2%9D%84">&#182;</a></h2><h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2><p>See <a href="#📁">📁 Data processing 📁</a> section</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="%E2%9D%84-Step-4.-How-many-products-cost-more-than-$10.00?-%E2%9D%84">&#10052; Step 4. How many products cost more than $10.00? &#10052;<a class="anchor-link" href="#%E2%9D%84-Step-4.-How-many-products-cost-more-than-$10.00?-%E2%9D%84">&#182;</a></h2><h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14678,10 +14710,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser</span> <span class="o">=</span> <span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;unit_price_usd&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span>
+<span class="n">chipo</span><span class="p">[</span><span class="n">ser</span><span class="p">][</span><span class="s2">&quot;item_name&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14699,7 +14732,60 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>25</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="%E2%9D%84-Step-5.-What-is-the-price-of-each-item?-%E2%9D%84">&#10052; Step 5. What is the price of each item? &#10052;<a class="anchor-link" href="#%E2%9D%84-Step-5.-What-is-the-price-of-each-item?-%E2%9D%84">&#182;</a></h2><p>i.e., print a data frame with only two columns <code>item_name</code> and <code>item_price</code> (which we changed to <code>price_usd</code>)</p>
+<h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chipo</span><span class="p">[[</span><span class="s2">&quot;item_name&quot;</span><span class="p">,</span> <span class="s2">&quot;price_usd&quot;</span><span class="p">]]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
 
 
 
@@ -14722,153 +14808,69 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>code</th>
-      <th>url</th>
-      <th>creator</th>
-      <th>created_t</th>
-      <th>created_datetime</th>
-      <th>last_modified_t</th>
-      <th>last_modified_datetime</th>
-      <th>product_name</th>
-      <th>generic_name</th>
-      <th>quantity</th>
-      <th>...</th>
-      <th>fruits-vegetables-nuts_100g</th>
-      <th>fruits-vegetables-nuts-estimate_100g</th>
-      <th>collagen-meat-protein-ratio_100g</th>
-      <th>cocoa_100g</th>
-      <th>chlorophyl_100g</th>
-      <th>carbon-footprint_100g</th>
-      <th>nutrition-score-fr_100g</th>
-      <th>nutrition-score-uk_100g</th>
-      <th>glycemic-index_100g</th>
-      <th>water-hardness_100g</th>
+      <th>item_name</th>
+      <th>price_usd</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>0000000003087</td>
-      <td>http://world-en.openfoodfacts.org/product/0000...</td>
-      <td>openfoodfacts-contributors</td>
-      <td>1474103866</td>
-      <td>2016-09-17T09:17:46Z</td>
-      <td>1474103893</td>
-      <td>2016-09-17T09:18:13Z</td>
-      <td>Farine de blé noir</td>
-      <td>NaN</td>
-      <td>1kg</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>Chips and Fresh Tomato Salsa</td>
+      <td>2.39</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>0000000004530</td>
-      <td>http://world-en.openfoodfacts.org/product/0000...</td>
-      <td>usda-ndb-import</td>
-      <td>1489069957</td>
-      <td>2017-03-09T14:32:37Z</td>
-      <td>1489069957</td>
-      <td>2017-03-09T14:32:37Z</td>
-      <td>Banana Chips Sweetened (Whole)</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>14.0</td>
-      <td>14.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>Izze</td>
+      <td>3.39</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0000000004559</td>
-      <td>http://world-en.openfoodfacts.org/product/0000...</td>
-      <td>usda-ndb-import</td>
-      <td>1489069957</td>
-      <td>2017-03-09T14:32:37Z</td>
-      <td>1489069957</td>
-      <td>2017-03-09T14:32:37Z</td>
-      <td>Peanuts</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>Nantucket Nectar</td>
+      <td>3.39</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>0000000016087</td>
-      <td>http://world-en.openfoodfacts.org/product/0000...</td>
-      <td>usda-ndb-import</td>
-      <td>1489055731</td>
-      <td>2017-03-09T10:35:31Z</td>
-      <td>1489055731</td>
-      <td>2017-03-09T10:35:31Z</td>
-      <td>Organic Salted Nut Mix</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>12.0</td>
-      <td>12.0</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>Chips and Tomatillo-Green Chili Salsa</td>
+      <td>2.39</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>0000000016094</td>
-      <td>http://world-en.openfoodfacts.org/product/0000...</td>
-      <td>usda-ndb-import</td>
-      <td>1489055653</td>
-      <td>2017-03-09T10:34:13Z</td>
-      <td>1489055653</td>
-      <td>2017-03-09T10:34:13Z</td>
-      <td>Organic Polenta</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>Chicken Bowl</td>
+      <td>16.98</td>
+    </tr>
+    <tr>
+      <th>...</th>
       <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>4617</th>
+      <td>Steak Burrito</td>
+      <td>11.75</td>
+    </tr>
+    <tr>
+      <th>4618</th>
+      <td>Steak Burrito</td>
+      <td>11.75</td>
+    </tr>
+    <tr>
+      <th>4619</th>
+      <td>Chicken Salad Bowl</td>
+      <td>11.25</td>
+    </tr>
+    <tr>
+      <th>4620</th>
+      <td>Chicken Salad Bowl</td>
+      <td>8.75</td>
+    </tr>
+    <tr>
+      <th>4621</th>
+      <td>Chicken Salad Bowl</td>
+      <td>8.75</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 163 columns</p>
+<p>4622 rows × 2 columns</p>
 </div>
 </div>
 
@@ -14885,7 +14887,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-5.-What-is-the-number-of-observations-in-the-dataset?">Step 5. What is the number of observations in the dataset?<a class="anchor-link" href="#Step-5.-What-is-the-number-of-observations-in-the-dataset?">&#182;</a></h3>
+<h2 id="%E2%9D%84-Step-6.-Sort-by-the-name-of-the-item-%E2%9D%84">&#10052; Step 6. Sort by the name of the item &#10052;<a class="anchor-link" href="#%E2%9D%84-Step-6.-Sort-by-the-name-of-the-item-%E2%9D%84">&#182;</a></h2><h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -14894,10 +14896,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chipo</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;item_name&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14915,13 +14917,141 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>356027</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>order_id</th>
+      <th>quantity</th>
+      <th>item_name</th>
+      <th>choice_description</th>
+      <th>price_usd</th>
+      <th>unit_price_usd</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3389</th>
+      <td>1360</td>
+      <td>2</td>
+      <td>6 Pack Soft Drink</td>
+      <td>[Diet Coke]</td>
+      <td>12.98</td>
+      <td>6.49</td>
+    </tr>
+    <tr>
+      <th>341</th>
+      <td>148</td>
+      <td>1</td>
+      <td>6 Pack Soft Drink</td>
+      <td>[Diet Coke]</td>
+      <td>6.49</td>
+      <td>6.49</td>
+    </tr>
+    <tr>
+      <th>1849</th>
+      <td>749</td>
+      <td>1</td>
+      <td>6 Pack Soft Drink</td>
+      <td>[Coke]</td>
+      <td>6.49</td>
+      <td>6.49</td>
+    </tr>
+    <tr>
+      <th>1860</th>
+      <td>754</td>
+      <td>1</td>
+      <td>6 Pack Soft Drink</td>
+      <td>[Diet Coke]</td>
+      <td>6.49</td>
+      <td>6.49</td>
+    </tr>
+    <tr>
+      <th>2713</th>
+      <td>1076</td>
+      <td>1</td>
+      <td>6 Pack Soft Drink</td>
+      <td>[Coke]</td>
+      <td>6.49</td>
+      <td>6.49</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2384</th>
+      <td>948</td>
+      <td>1</td>
+      <td>Veggie Soft Tacos</td>
+      <td>[Roasted Chili Corn Salsa, [Fajita Vegetables,...</td>
+      <td>8.75</td>
+      <td>8.75</td>
+    </tr>
+    <tr>
+      <th>781</th>
+      <td>322</td>
+      <td>1</td>
+      <td>Veggie Soft Tacos</td>
+      <td>[Fresh Tomato Salsa, [Black Beans, Cheese, Sou...</td>
+      <td>8.75</td>
+      <td>8.75</td>
+    </tr>
+    <tr>
+      <th>2851</th>
+      <td>1132</td>
+      <td>1</td>
+      <td>Veggie Soft Tacos</td>
+      <td>[Roasted Chili Corn Salsa (Medium), [Black Bea...</td>
+      <td>8.49</td>
+      <td>8.49</td>
+    </tr>
+    <tr>
+      <th>1699</th>
+      <td>688</td>
+      <td>1</td>
+      <td>Veggie Soft Tacos</td>
+      <td>[Fresh Tomato Salsa, [Fajita Vegetables, Rice,...</td>
+      <td>11.25</td>
+      <td>11.25</td>
+    </tr>
+    <tr>
+      <th>1395</th>
+      <td>567</td>
+      <td>1</td>
+      <td>Veggie Soft Tacos</td>
+      <td>[Fresh Tomato Salsa (Mild), [Pinto Beans, Rice...</td>
+      <td>8.49</td>
+      <td>8.49</td>
+    </tr>
+  </tbody>
+</table>
+<p>4622 rows × 6 columns</p>
+</div>
 </div>
 
 </div>
@@ -14937,7 +15067,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-6.-What-is-the-number-of-columns-in-the-dataset?">Step 6. What is the number of columns in the dataset?<a class="anchor-link" href="#Step-6.-What-is-the-number-of-columns-in-the-dataset?">&#182;</a></h3>
+<h2 id="%E2%9D%84-Step-7.-What-was-the-quantity-of-the-most-expensive-item-ordered?-%E2%9D%84">&#10052; Step 7. What was the quantity of the most expensive item ordered? &#10052;<a class="anchor-link" href="#%E2%9D%84-Step-7.-What-was-the-quantity-of-the-most-expensive-item-ordered?-%E2%9D%84">&#182;</a></h2><h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2><p>This is ambiguous, so we will sort by both total price and unit price.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="%E2%9A%AA-Total-price">&#9898; Total price<a class="anchor-link" href="#%E2%9A%AA-Total-price">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14946,10 +15088,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">chipo</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;price_usd&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -14967,13 +15110,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>163</pre>
+<pre>15</pre>
 </div>
 
 </div>
@@ -14989,7 +15132,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-7.-Print-the-name-of-all-the-columns.">Step 7. Print the name of all the columns.<a class="anchor-link" href="#Step-7.-Print-the-name-of-all-the-columns.">&#182;</a></h3>
+<h3 id="%E2%9A%AB-Unit-price">&#9899; Unit price<a class="anchor-link" href="#%E2%9A%AB-Unit-price">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14998,12 +15141,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># help(type(food.columns))</span>
-<span class="n">columns</span> <span class="o">=</span> <span class="n">food</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
-<span class="n">columns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">chipo</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;unit_price_usd&quot;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
 </pre></div>
 
      </div>
@@ -15021,175 +15163,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[&#39;code&#39;,
- &#39;url&#39;,
- &#39;creator&#39;,
- &#39;created_t&#39;,
- &#39;created_datetime&#39;,
- &#39;last_modified_t&#39;,
- &#39;last_modified_datetime&#39;,
- &#39;product_name&#39;,
- &#39;generic_name&#39;,
- &#39;quantity&#39;,
- &#39;packaging&#39;,
- &#39;packaging_tags&#39;,
- &#39;brands&#39;,
- &#39;brands_tags&#39;,
- &#39;categories&#39;,
- &#39;categories_tags&#39;,
- &#39;categories_en&#39;,
- &#39;origins&#39;,
- &#39;origins_tags&#39;,
- &#39;manufacturing_places&#39;,
- &#39;manufacturing_places_tags&#39;,
- &#39;labels&#39;,
- &#39;labels_tags&#39;,
- &#39;labels_en&#39;,
- &#39;emb_codes&#39;,
- &#39;emb_codes_tags&#39;,
- &#39;first_packaging_code_geo&#39;,
- &#39;cities&#39;,
- &#39;cities_tags&#39;,
- &#39;purchase_places&#39;,
- &#39;stores&#39;,
- &#39;countries&#39;,
- &#39;countries_tags&#39;,
- &#39;countries_en&#39;,
- &#39;ingredients_text&#39;,
- &#39;allergens&#39;,
- &#39;allergens_en&#39;,
- &#39;traces&#39;,
- &#39;traces_tags&#39;,
- &#39;traces_en&#39;,
- &#39;serving_size&#39;,
- &#39;no_nutriments&#39;,
- &#39;additives_n&#39;,
- &#39;additives&#39;,
- &#39;additives_tags&#39;,
- &#39;additives_en&#39;,
- &#39;ingredients_from_palm_oil_n&#39;,
- &#39;ingredients_from_palm_oil&#39;,
- &#39;ingredients_from_palm_oil_tags&#39;,
- &#39;ingredients_that_may_be_from_palm_oil_n&#39;,
- &#39;ingredients_that_may_be_from_palm_oil&#39;,
- &#39;ingredients_that_may_be_from_palm_oil_tags&#39;,
- &#39;nutrition_grade_uk&#39;,
- &#39;nutrition_grade_fr&#39;,
- &#39;pnns_groups_1&#39;,
- &#39;pnns_groups_2&#39;,
- &#39;states&#39;,
- &#39;states_tags&#39;,
- &#39;states_en&#39;,
- &#39;main_category&#39;,
- &#39;main_category_en&#39;,
- &#39;image_url&#39;,
- &#39;image_small_url&#39;,
- &#39;energy_100g&#39;,
- &#39;energy-from-fat_100g&#39;,
- &#39;fat_100g&#39;,
- &#39;saturated-fat_100g&#39;,
- &#39;-butyric-acid_100g&#39;,
- &#39;-caproic-acid_100g&#39;,
- &#39;-caprylic-acid_100g&#39;,
- &#39;-capric-acid_100g&#39;,
- &#39;-lauric-acid_100g&#39;,
- &#39;-myristic-acid_100g&#39;,
- &#39;-palmitic-acid_100g&#39;,
- &#39;-stearic-acid_100g&#39;,
- &#39;-arachidic-acid_100g&#39;,
- &#39;-behenic-acid_100g&#39;,
- &#39;-lignoceric-acid_100g&#39;,
- &#39;-cerotic-acid_100g&#39;,
- &#39;-montanic-acid_100g&#39;,
- &#39;-melissic-acid_100g&#39;,
- &#39;monounsaturated-fat_100g&#39;,
- &#39;polyunsaturated-fat_100g&#39;,
- &#39;omega-3-fat_100g&#39;,
- &#39;-alpha-linolenic-acid_100g&#39;,
- &#39;-eicosapentaenoic-acid_100g&#39;,
- &#39;-docosahexaenoic-acid_100g&#39;,
- &#39;omega-6-fat_100g&#39;,
- &#39;-linoleic-acid_100g&#39;,
- &#39;-arachidonic-acid_100g&#39;,
- &#39;-gamma-linolenic-acid_100g&#39;,
- &#39;-dihomo-gamma-linolenic-acid_100g&#39;,
- &#39;omega-9-fat_100g&#39;,
- &#39;-oleic-acid_100g&#39;,
- &#39;-elaidic-acid_100g&#39;,
- &#39;-gondoic-acid_100g&#39;,
- &#39;-mead-acid_100g&#39;,
- &#39;-erucic-acid_100g&#39;,
- &#39;-nervonic-acid_100g&#39;,
- &#39;trans-fat_100g&#39;,
- &#39;cholesterol_100g&#39;,
- &#39;carbohydrates_100g&#39;,
- &#39;sugars_100g&#39;,
- &#39;-sucrose_100g&#39;,
- &#39;-glucose_100g&#39;,
- &#39;-fructose_100g&#39;,
- &#39;-lactose_100g&#39;,
- &#39;-maltose_100g&#39;,
- &#39;-maltodextrins_100g&#39;,
- &#39;starch_100g&#39;,
- &#39;polyols_100g&#39;,
- &#39;fiber_100g&#39;,
- &#39;proteins_100g&#39;,
- &#39;casein_100g&#39;,
- &#39;serum-proteins_100g&#39;,
- &#39;nucleotides_100g&#39;,
- &#39;salt_100g&#39;,
- &#39;sodium_100g&#39;,
- &#39;alcohol_100g&#39;,
- &#39;vitamin-a_100g&#39;,
- &#39;beta-carotene_100g&#39;,
- &#39;vitamin-d_100g&#39;,
- &#39;vitamin-e_100g&#39;,
- &#39;vitamin-k_100g&#39;,
- &#39;vitamin-c_100g&#39;,
- &#39;vitamin-b1_100g&#39;,
- &#39;vitamin-b2_100g&#39;,
- &#39;vitamin-pp_100g&#39;,
- &#39;vitamin-b6_100g&#39;,
- &#39;vitamin-b9_100g&#39;,
- &#39;folates_100g&#39;,
- &#39;vitamin-b12_100g&#39;,
- &#39;biotin_100g&#39;,
- &#39;pantothenic-acid_100g&#39;,
- &#39;silica_100g&#39;,
- &#39;bicarbonate_100g&#39;,
- &#39;potassium_100g&#39;,
- &#39;chloride_100g&#39;,
- &#39;calcium_100g&#39;,
- &#39;phosphorus_100g&#39;,
- &#39;iron_100g&#39;,
- &#39;magnesium_100g&#39;,
- &#39;zinc_100g&#39;,
- &#39;copper_100g&#39;,
- &#39;manganese_100g&#39;,
- &#39;fluoride_100g&#39;,
- &#39;selenium_100g&#39;,
- &#39;chromium_100g&#39;,
- &#39;molybdenum_100g&#39;,
- &#39;iodine_100g&#39;,
- &#39;caffeine_100g&#39;,
- &#39;taurine_100g&#39;,
- &#39;ph_100g&#39;,
- &#39;fruits-vegetables-nuts_100g&#39;,
- &#39;fruits-vegetables-nuts-estimate_100g&#39;,
- &#39;collagen-meat-protein-ratio_100g&#39;,
- &#39;cocoa_100g&#39;,
- &#39;chlorophyl_100g&#39;,
- &#39;carbon-footprint_100g&#39;,
- &#39;nutrition-score-fr_100g&#39;,
- &#39;nutrition-score-uk_100g&#39;,
- &#39;glycemic-index_100g&#39;,
- &#39;water-hardness_100g&#39;]</pre>
+<pre>1</pre>
 </div>
 
 </div>
@@ -15205,7 +15185,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-8.-What-is-the-name-of-105th-column?">Step 8. What is the name of 105th column?<a class="anchor-link" href="#Step-8.-What-is-the-name-of-105th-column?">&#182;</a></h3>
+<h2 id="%E2%9D%84-Step-8.-How-many-times-was-a-Veggie-Salad-Bowl-ordered?-%E2%9D%84">&#10052; Step 8. How many times was a Veggie Salad Bowl ordered? &#10052;<a class="anchor-link" href="#%E2%9D%84-Step-8.-How-many-times-was-a-Veggie-Salad-Bowl-ordered?-%E2%9D%84">&#182;</a></h2><h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15214,10 +15194,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()[</span><span class="mi">104</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser</span> <span class="o">=</span> <span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;item_name&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Veggie Salad Bowl&quot;</span>
+<span class="n">ser</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15235,13 +15216,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;-glucose_100g&#39;</pre>
+<pre>18</pre>
 </div>
 
 </div>
@@ -15257,7 +15238,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-9.-What-is-the-type-of-the-observations-of-the-105th-column?">Step 9. What is the type of the observations of the 105th column?<a class="anchor-link" href="#Step-9.-What-is-the-type-of-the-observations-of-the-105th-column?">&#182;</a></h3>
+<h2 id="%E2%9D%84-Step-9.-How-many-times-did-someone-order-more-than-one-Canned-Soda?-%E2%9D%84-">&#10052; Step 9. How many times did someone order more than one Canned Soda? &#10052; <a id="&#10052;9" /><a class="anchor-link" href="#%E2%9D%84-Step-9.-How-many-times-did-someone-order-more-than-one-Canned-Soda?-%E2%9D%84-">&#182;</a></h2><h2 id="%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#127800; Solution &#127800;<a class="anchor-link" href="#%F0%9F%8C%B8-Solution-%F0%9F%8C%B8">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -15266,10 +15247,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="mi">104</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ser_1</span> <span class="o">=</span> <span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;item_name&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Canned Soda&quot;</span>
+<span class="n">ser_2</span> <span class="o">=</span> <span class="n">chipo</span><span class="p">[</span><span class="s2">&quot;quantity&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span>
+<span class="p">(</span><span class="n">ser_1</span> <span class="o">&amp;</span> <span class="n">ser_2</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -15287,117 +15270,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[33]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>dtype(&#39;float64&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-10.-How-is-the-dataset-indexed?">Step 10. How is the dataset indexed?<a class="anchor-link" href="#Step-10.-How-is-the-dataset-indexed?">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span><span class="o">.</span><span class="n">index</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>RangeIndex(start=0, stop=356027, step=1)</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Step-11.-What-is-the-product-name-of-the-19th-observation?">Step 11. What is the product name of the 19th observation?<a class="anchor-link" href="#Step-11.-What-is-the-product-name-of-the-19th-observation?">&#182;</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">food</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">18</span><span class="p">][</span><span class="s2">&quot;product_name&quot;</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;Lotus Organic Brown Jasmine Rice&#39;</pre>
+<pre>20</pre>
 </div>
 
 </div>
