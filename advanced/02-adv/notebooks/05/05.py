@@ -15,9 +15,9 @@
 
 # # `05.ipynb`
 #
-# <div align="center">
+# <center>
 #     <img src="../../images/05/05.png" style="width:60%; border-radius:10px"/>
-# <div>
+# </center>
 #
 # [🎥 Mili - world.execute(me); (Key Ingredient ver.) | ⌚ 2:39](https://www.youtube.com/watch?v=JB5gfmWQzSA)
 #
