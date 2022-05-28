@@ -1,7 +1,7 @@
 # ---
 # jupyter:
 #   jupytext:
-#     formats: ipynb,py
+#     formats: py:light,ipynb
 #     text_representation:
 #       extension: .py
 #       format_name: light
@@ -24,16 +24,46 @@
 # ---
 #
 # [🧑💻 zachhall | `pandas_exercises/07_Visualization/Online_Retail/` | GitHub](https://github.com/zachhall/pandas_exercises/tree/master/07_Visualization/Online_Retail)
+#
+# - https://stackoverflow.com/a/45967650
+# - https://colorhunt.co
+# - https://www.color-hex.com
+# - https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/stylelib/dark_background.mplstyle
+# - https://stackoverflow.com/questions/30079590/use-matplotlib-color-map-for-color-cycle
+# - https://thenode.biologists.com/data-visualization-with-flying-colors/research/
+# - https://personal.sron.nl/~pault/#sec:qualitative
 
 # ## 🐍 Python imports 🐍 <a id="🐍"></a>
 
 # ### 🐍🐍 External modules <a id = "🐍🐍"></a>
 
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
+# ### 🐍🐍 `matplotlib` config
+
+plt.style.use("../../style/higanbana.mplstyle")
+test = ["#006ba4", "#ff800e", "#ababab", "#595959", "#5f9ed1"]
 
 # ## 📁 Data 📁 <a id = "📁"></a>
 
 online_rt = pd.read_csv("../../data/07/Online_Retail.csv", encoding="latin1")
+
+online_rt.columns
+
+# +
+gb = online_rt.groupby("Country")
+ser = gb["Quantity"].sum()
+
+ser.sort_values(ascending=False, inplace=True)
+ser.drop(labels="United Kingdom", inplace=True)
+ser = ser.iloc[0:10]
+# -
+
+ser
+
+ser.plot(kind="barh", color=test)
 
 # ## ❓ Steps `1 -> 6` ❔
 
