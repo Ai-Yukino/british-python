@@ -25,26 +25,43 @@
 #
 # [🧑💻 zachhall | `pandas_exercises/07_Visualization/Online_Retail/` | GitHub](https://github.com/zachhall/pandas_exercises/tree/master/07_Visualization/Online_Retail)
 #
-# - https://stackoverflow.com/a/45967650
-# - https://colorhunt.co
-# - https://www.color-hex.com
 # - https://github.com/matplotlib/matplotlib/blob/main/lib/matplotlib/mpl-data/stylelib/dark_background.mplstyle
 # - https://stackoverflow.com/questions/30079590/use-matplotlib-color-map-for-color-cycle
-# - https://thenode.biologists.com/data-visualization-with-flying-colors/research/
 # - https://personal.sron.nl/~pault/#sec:qualitative
+# - https://matplotlib.org/stable/gallery/ticks/tick-formatters.html
+#     - https://stackoverflow.com/a/38152510
+# - https://stackoverflow.com/a/68107610
+# - https://stackoverflow.com/questions/70515542/adding-comma-to-bar-labels-in-matplotlib
+# - https://matplotlib.org/stable/api/container_api.html#matplotlib.container.Container
+# - https://matplotlib.org/stable/tutorials/introductory/customizing.html#the-default-matplotlibrc-file
 
 # ## 🐍 Python imports 🐍 <a id="🐍"></a>
 
 # ### 🐍🐍 External modules <a id = "🐍🐍"></a>
 
+# +
 import pandas as pd
+
 import matplotlib.pyplot as plt
-import numpy as np
+import matplotlib.ticker as mtick
+# -
 
-# ### 🐍🐍 `matplotlib` config
+# ### 📈📉 `matplotlib` config
 
-plt.style.use("../../style/higanbana.mplstyle")
-test = ["#006ba4", "#ff800e", "#ababab", "#595959", "#5f9ed1"]
+plt.style.use("../../style/ai.mplstyle")
+
+# ### 🌈🌈 `ai.mply.style` colors
+
+black_like = "#393432"
+white_like = "#FCC9B9"
+yellow_like = "#FFB61E"
+tol_bright = ['4477AA', 'EE6677', '228833', 
+              'CCBB44', '66CCEE', 'AA3377', 
+              'BBBBBB']
+
+# ### 🌈🌈 Other colors
+
+quantity_sum_color = "#bb8855" # complmenet of #4477AA
 
 # ## 📁 Data 📁 <a id = "📁"></a>
 
@@ -63,7 +80,37 @@ ser = ser.iloc[0:10]
 
 ser
 
-ser.plot(kind="barh", color=test)
+# +
+ser.sort_values(ascending=True, inplace=True)
+
+plt.figure(figsize=(18.5, 3.75), dpi=115)
+
+ax = ser.plot(kind="barh", 
+              title="Top 10 contries by total quantity excluding the UK", 
+              legend=True)
+
+ax.legend(labelcolor=quantity_sum_color)
+
+plt.xticks(rotation=25)
+tick = mtick.StrMethodFormatter("{x:,.0f}")
+ax.xaxis.set_major_formatter(tick)
+
+bar_container = ax.containers[0]
+ax.bar_label(bar_container, labels=[f' {b:,.0f}' for b in bar_container.datavalues], color=quantity_sum_color);
+# plt.savefig("blah.png", dpi=115)
+# -
+
+online_rt["Quantity"].min() > 0
+
+# +
+ser_boolean = online_rt["Quantity"] > 0
+online_rt = online_rt[ser_boolean]
+
+online_rt["Quantity"].min() > 0
+
+# +
+# online_rt.plot(kind="scatter")
+# -
 
 # ## ❓ Steps `1 -> 6` ❔
 
